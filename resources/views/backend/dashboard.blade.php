@@ -84,7 +84,7 @@
                 <div class="media p-3">
                     <div class="media-body">
                         <span class="text-muted text-uppercase font-size-12 font-weight-bold">
-                            In Progress Delieveries
+                            In-Progress Appointments
                         </span>
                         <h2 class="mb-0"> {{ $in_progress_appointments_count }} </h2>
                     </div>

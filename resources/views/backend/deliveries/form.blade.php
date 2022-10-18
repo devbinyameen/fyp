@@ -22,9 +22,7 @@
 
         @if( isset( $delivery ) )
         <edit-delivery
-            :service_cities="{{ $service_cities }}"
             :services="{{ $services }}"
-            :branches="{{ $branches }}"
             :user="{{ \Auth::user() }}"
             :delivery_prop="{{ $delivery }}"
         >
@@ -32,9 +30,7 @@
 
         @else
         <add-delivery
-            :service_cities="{{ $service_cities }}"
             :services="{{ $services }}"
-            :branches="{{ $branches }}"
             :user="{{ \Auth::user() }}"
         >
         </add-delivery>

@@ -10,7 +10,7 @@ use App\Domains\Auth\Models\User;
 use App\Models\Branch;
 use App\Models\Service;
 
-class DeliveryController extends Controller
+class AppointmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -60,9 +60,8 @@ class DeliveryController extends Controller
      */
     public function create()
     {
-        $branches = Branch::orderBy('name','asc')->get();
-        $services = Service::whereStatus('active')->whereServiceLevel('service')->orderBy('name','asc')->with('children')->get();
-        return view( $this->directory.'.form', compact('branches', 'services') );
+        $services = Service::whereStatus('active')->get();
+        return view( $this->directory.'.form', compact( 'services') );
     }
 
     /**
@@ -96,10 +95,9 @@ class DeliveryController extends Controller
     public function edit($id)
     {
         $delivery = $this->service->getDelivery( $id );
-        $branches = Branch::orderBy('name','asc')->get();
         $services = Service::whereStatus('active')->whereServiceLevel('service')->orderBy('name','asc')->with('children')->get();
 
-        return view( $this->directory. 'form', compact('delivery', 'branches', 'services') );
+        return view( $this->directory. 'form', compact('delivery', 'services') );
     }
 
     /**
@@ -125,7 +123,7 @@ class DeliveryController extends Controller
        return $this->service->deleteDelivery( $id );
     }
 
-    public function delivered(Request $request )
+    public function requested(Request $request )
     {
         if ($request->ajax()) {
             $data = $this->service->getDeliveredDeliveries();
@@ -173,15 +171,6 @@ class DeliveryController extends Controller
         }
 
         return view( $this->directory.'pending');
-    }
-
-    public function assignRider( $id )
-    {
-        $delivery = $this->service->getDelivery( $id );
-        $riders = User::whereHas('roles', function( $query ){
-            return $query->where('type','rider');
-        })->get();
-        return view( $this->directory.'assign', compact('delivery','riders' ));
     }
 
 }

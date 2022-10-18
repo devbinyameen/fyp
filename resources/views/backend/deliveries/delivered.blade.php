@@ -15,6 +15,8 @@
             padding-left: 45%;
         }
     </style>
+<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 @endsection
 
 @section('breadcrumb')
@@ -23,10 +25,10 @@
             <nav aria-label="breadcrumb" class="float-right mt-1">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ url('admin/dashboard') }}"> Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"></li> Deliveries</li>
+                    <li class="breadcrumb-item active" aria-current="page"></li> Appointments</li>
                 </ol>
             </nav>
-            <h4 class="mb-1 mt-0">Delivered Deliveries</h4>
+            <h4 class="mb-1 mt-0">Delivered Appointments</h4>
         </div>
     </div>
 @endsection
@@ -45,7 +47,7 @@
                 <div class="card-body">
 
                      <div class="col-12 mb-5">
-                        <a href="{{ route('admin.deliveries.create') }}" class="btn btn-sm btn-outline-primary float-right"> Add Delievery </a>
+                        <a href="{{ route('admin.appointments.create') }}" class="btn btn-sm btn-outline-primary float-right"> Add Delievery </a>
                     </div>
 
                     @foreach (['danger', 'warning', 'success', 'info'] as $key)
@@ -67,21 +69,14 @@
                         <table id="shops_datatable" class="table nowrap table-hover">
                             <thead>
                             <tr>
-                                <th> DN ( Delivery Number ) </th>
-                                <th> Sender </th>
-                                <th> Sender Phone </th>
-                                <th> Sender City </th>
-                                <th> Sender Address </th>
+                                <th> Appointment Number </th>
+                                <th> Customer </th>
                                 <th> Service </th>
-                                <th> Reciever </th>
-                                <th> Reciever Phone </th>
-                                <th> Reciever City </th>
-                                <th> Reviever Address </th>
-                                <th> Weight </th>
-                                <th> Rate Claimed </th>
-                                <th> Booking Date </th>
-                                <th> Rider </th>
+                                <th> Service Charges </th>
+                                <th> Appointment From </th>
+                                <th> Appointment To </th>
                                 <th> Status </th>
+                                <th> Actions </th>
                             </tr>
                             </thead>
 
@@ -101,6 +96,7 @@
 @endsection
 
 @section('script')
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#loader').fadeOut('slow');
@@ -109,28 +105,21 @@
                 processing: true,
                 serverSide: true,
                 method: 'GET',
-                ajax: "{{ route('admin.deliveries.delivered') }}",
+                ajax: "{{ route('admin.appointments.requested') }}",
                 columns: [
                     {data: 'id', name: 'id'},
-                    {data: 'branch.name', name: 'branch.name'},
-                    {data: 'sender_phone', name: 'sender_phone'},
-                    {data: 'sender_city', name: 'sender_city'},
-                    {data: 'sender_address', name: 'sender_address'},
+                    {data: 'customer.name', name: 'customer.name'},
                     {data: 'service.name', name: 'service.name'},
-                    {data: 'reciever', name: 'reciever'},
-                    {data: 'reciever_phone', name: 'reciever_phone'},
-                    {data: 'reciever_city', name: 'reciever_city'},
-                    {data: 'destination', name: 'destination'},
-                    {data: 'weight', name: 'weight'},
-                    {data: 'total_charges', name: 'total_charges'},
-                    {data: 'booking_date', name: 'booking_date'},
+                    {data: 'service.charges', charges: 'service.name'},
+                    {data: 'from_time', name: 'from_time'},
+                    {data: 'to_time', name: 'to_time'},
+                    {data: 'status', name: 'status'},
                     {
-                        data: 'rider',
-                        name: 'rider',
+                        data: 'action',
+                        name: 'action',
                         orderable: true,
                         searchable: true
                     },
-                    {data: 'status', name: 'status'},
                 ]
             });
 

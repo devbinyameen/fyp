@@ -18,7 +18,7 @@ class CreateAppointmentsTable extends Migration
             $table->unsignedBigInteger('company_id');
             $table->unsignedBigInteger('service_id');
             $table->unsignedBigInteger('user_id');
-            $table->enum('status', ['requested','approved','declined','in-progress'])->default('requested');
+            $table->enum('status', ['requested','approved','declined','in-progress', 'completed'])->default('requested');
             $table->timestamp('from_time')->nullable();
             $table->timestamp('to_time')->nullable();
             $table->timestamps();
