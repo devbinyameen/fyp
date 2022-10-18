@@ -31,22 +31,14 @@ class AppointmentController extends Controller
             return Datatables::of($data)
                     ->addIndexColumn()  
                     ->addColumn('action', function($row){
-                        $btn = '<a href="deliveries/'.$row['id'].'/assign_rider" class="float-left btn btn-info btn-sm"> Assign Rider </a>';
-                        $btn .= '<a href="deliveries/'.$row['id'].'/edit" class="ml-1 float-left edit btn btn-success btn-sm">Edit</a>';
+                        $btn = '<a href="deliveries/'.$row['id'].'/edit" class="ml-1 float-left edit btn btn-success btn-sm">Edit</a>';
                         $btn .= '
                            <form action="deliveries/'.$row['id'].'" method="POST">
                                 '.csrf_field().method_field("DELETE").'
                                 <button class="ml-1 btn btn-danger btn-sm" type="submit"> Delete </button> </form></div>';
                         return $btn;
                     })
-                    ->addColumn('rider', function ( $row ){
-                        if( isset( $row['rider_id'] ) )
-                        {
-                            return "<p class='text-info'><b>".$row->rider->full_name."</b></p>";
-                        }
-                        return "<p class='badge badge-warning'> Not Assigned </p>";
-                    } )
-                    ->rawColumns(['action', 'rider'])
+                    ->rawColumns(['action'])
                     ->make(true);
         }
 
@@ -129,14 +121,6 @@ class AppointmentController extends Controller
             $data = $this->service->getDeliveredDeliveries();
             return Datatables::of($data)
                     ->addIndexColumn()  
-                    ->addColumn('rider', function ( $row ){
-                        if( isset( $row->rider ) )
-                        {
-                            return "<p class='text-info'><b>".$row->rider->full_name."</b></p>";
-                        }
-                        return "<p class='badge badge-warning'> Not Assigned </p>";
-                    } )
-                    ->rawColumns(['rider'])
                     ->make(true);
         }
 

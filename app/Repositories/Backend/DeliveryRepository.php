@@ -32,19 +32,19 @@ class DeliveryRepository
 
     public function getDeliveries()
     {
-        $deliveries = Appointment::orderBy('id','desc')->with('service')->get();
+        $deliveries = Appointment::orderBy('id','desc')->with('service', 'customer')->get();
         return $deliveries;
     }
 
     public function getDeliveredDeliveries()
     {
-        $deliveries = Appointment::whereStatus('completed')->orderBy('id','desc')->with('service')->get();
+        $deliveries = Appointment::whereStatus('completed')->orderBy('id','desc')->with('service', 'customer')->get();
         return $deliveries;
     }
 
     public function getPendingDeliveries()
     {
-        $deliveries = Appointment::where('status', '=' , 'booked')->orderBy('id','desc')->with( 'service')->get();
+        $deliveries = Appointment::where('status', '=' , 'booked')->orderBy('id','desc')->with( 'service', 'customer')->get();
         return $deliveries;
     }
 

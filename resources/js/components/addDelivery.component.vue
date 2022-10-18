@@ -90,7 +90,6 @@ export default {
             booking_date: new Date().toISOString().slice(0, 10),
             destination: "",
         },
-        delivery_service_map:[],
     }),
     created(){
         this.addNewDelievery()
@@ -118,24 +117,9 @@ export default {
             delievery.reciever_city = delievery.cities[0].city_slug;
             
             this.deliveries.push( delievery );
-            const delivery_service_map = {
-                id: delievery.id,
-                service_id: delievery.service_id
-            };
-            this.delivery_service_map.push( delivery_service_map )
         }
     },
     watch: {
-        deliveries:
-        {
-            handler: function( newVal )
-            { 
-                const vm = this;
-                
-            },
-            deep: true,
-            
-        }
     },
     
 }

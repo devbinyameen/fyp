@@ -47,7 +47,7 @@
                 <div class="card-body">
 
                      <div class="col-12 mb-5">
-                        <a href="{{ route('admin.appointments.create') }}" class="btn btn-sm btn-outline-primary float-right"> Add Delievery </a>
+                        <a href="{{ route('admin.appointments.create') }}" class="btn btn-sm btn-outline-primary float-right"> Add Appointment </a>
                     </div>
 
                     @foreach (['danger', 'warning', 'success', 'info'] as $key)
@@ -108,8 +108,8 @@
                 ajax: "{{ route('admin.appointments.index') }}",
                 columns: [
                     {data: 'id', name: 'id'},
-                    {data: 'customer.name', name: 'customer.name'},
-                    {data: 'service.name', name: 'service.name'},
+                    {data: 'customer.full_name', name: 'customer.full_name'},
+                    {data: 'service.service_title', service_title: 'service.service_title'},
                     {data: 'service.charges', charges: 'service.name'},
                     {data: 'from_time', name: 'from_time'},
                     {data: 'to_time', name: 'to_time'},
