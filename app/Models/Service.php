@@ -10,15 +10,7 @@ class Service extends Model
 {
     use HasFactory,ServiceRelationship;
 
-    protected $fillable = [
-        'name',
-        'slug',
-        'parent_id',
-        'service_level',
-        'charges',
-        'status',
-        'service_title',
-    ];
+    protected $guarded = [ ];
 
 
 }

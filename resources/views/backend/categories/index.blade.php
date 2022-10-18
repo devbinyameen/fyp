@@ -28,7 +28,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Service Types</li>
                 </ol>
             </nav>
-            <h4 class="mb-1 mt-0"> Service  </h4>
+            <h4 class="mb-1 mt-0"> Categories  </h4>
         </div>
     </div>
 @endsection
@@ -70,7 +70,6 @@
                             <thead>
                             <tr>
                                 <th> Title </th>
-                                <th> Charges </th>
                                 <th> Status </th>
                                 <th> Actions </th>
                             </tr>
@@ -103,7 +102,6 @@
                 ajax: "{{ route('admin.services.index') }}",
                 columns: [
                     {data: 'name', name: 'name'},
-                    {data: 'charges', charges: 'charges'},
                     {data: 'status', name: 'status'},
                     {
                         data: 'action',

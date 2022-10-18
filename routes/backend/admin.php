@@ -2,7 +2,7 @@
 
 use App\Domains\Auth\Http\Controllers\Backend\User\UserController;
 use App\Http\Controllers\Backend\DashboardController;
-use App\Http\Controllers\Backend\BranchController;
+use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DeliveryController;
 use App\Http\Controllers\Backend\ServiceController;
 use Tabuna\Breadcrumbs\Trail;
@@ -11,9 +11,9 @@ use Tabuna\Breadcrumbs\Trail;
 
 Route::get('dashboard',[ DashboardController::class, 'index' ])->name('dashboard');
 
-Route::resource('branches', BranchController::class);
 Route::resource('users', UserController::class );
 Route::resource('services', ServiceController::class );
+Route::resource('categories', CategoryController::class );
 Route::resource('deliveries', DeliveryController::class);
 
 Route::get('deliveries/{delivery}/assign_rider', [ DeliveryController::class, 'assignRider' ]);

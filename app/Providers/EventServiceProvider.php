@@ -8,8 +8,6 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 
     // Observers
-use App\Models\Delivery;
-use App\Observers\DeliveryObserver;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -47,8 +45,6 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
-        Delivery::observe( DeliveryObserver::class );
 
     }
 }

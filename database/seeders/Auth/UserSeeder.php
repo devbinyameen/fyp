@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
             'last_name' => 'Binyameen Malik',
             'email' => 'ymalik495@gmail.com',
             'cnic' => '37302-4338517-5',
-            'password' => 'password007',
+            'password' => 'password',
             'email_verified_at' => now(),
             'status' => 1,
         ]);

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Client;
+namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Services\Backend\CategoryService;
 use DataTables;
-use App\Services\BranchService;
 
-class BranchController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,23 +15,25 @@ class BranchController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function __construct( BranchService $branchService  )
+    public function __construct( CategoryService $categoryService  )
     {
-        $this->service = $branchService;
-        $this->directory = 'client.branches.';
+        $this->service = $categoryService;
+        $this->directory = 'backend.categories.';
     } 
 
-    public function index(Request $request )
+
+    public function index( Request $request )
     {
-            if ($request->ajax()) {
-            $data = $this->service->getBranches();
+        if ($request->ajax()) {
+
+            $data = $this->service->getServices();
             return Datatables::of($data)
                     ->addIndexColumn()  
                     ->addColumn('action', function($row){
      
-                           $btn = '<div class="d-flex mx-auto"><a href="branches/'.$row['id'].'/edit" class="mx-auto edit btn btn-primary btn-sm">Edit</a>';
+                           $btn = '<a href="categories/'.$row['id'].'/edit" class="edit btn btn-primary btn-sm"> Edit </a>';
                            $btn .= '
-                           <form action="branches/'.$row['id'].'" method="POST">
+                           <form action="categories/'.$row['id'].'" method="POST">
                                 '.csrf_field().method_field("DELETE").'
                                 <button class="btn btn-danger btn-sm" type="submit"> Delete </button> </form></div>';
        
@@ -51,7 +53,7 @@ class BranchController extends Controller
      */
     public function create()
     {
-        return view( $this->directory.'.form' );
+        return view( $this->directory.'form' );
     }
 
     /**
@@ -62,8 +64,7 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
-        $this->service->addBranch( $request->all() );
-        return redirect()->route('client.branches.index')->with([ 'success' => 'Branch is added successfully.']);
+        return $this->service->addService( $request->all() );
     }
 
     /**
@@ -85,9 +86,8 @@ class BranchController extends Controller
      */
     public function edit($id)
     {
-        $branch = $this->service->getBranch( $id );
-        return view( $this->directory.'form', compact('branch') );
-
+        $service = $this->service->getService( $id );
+        return view( $this->directory.'form', compact('service') );
     }
 
     /**
@@ -99,8 +99,8 @@ class BranchController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->service->updateBranch( $request->except('_token', '_method'), $id );
-        return redirect( route('client.branches.index') )->with( [ 'success' => 'Branch is updated successfully.' ] );
+        $this->service->updateService( $request->all(), $id );
+        return redirect( route('admin.categories.index') )->with([ 'success' => 'Service is updated successfully.']);
     }
 
     /**
@@ -111,7 +111,7 @@ class BranchController extends Controller
      */
     public function destroy($id)
     {
-        return $this->service->deleteBranch( $id );
+        $this->service->deleteService($id);
+        return redirect( route('admin.categories.index') )->with([ 'success' => 'Service is deleted successfully.']);
     }
-
 }

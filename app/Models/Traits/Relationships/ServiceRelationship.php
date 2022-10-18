@@ -2,19 +2,14 @@
 
 namespace App\Models\Traits\Relationships;
 
-use App\Models\Service;
+use App\Models\Company;
 
 trait ServiceRelationship
 {
 
-    public function children(  )
+    public function company(  )
     {
-        return $this->hasMany( Service::class, 'parent_id' )->with('children');
-    }
-
-    public function parent()
-    {
-        return $this->belongsTo( Service::class, 'parent_id' );
+        return $this->belongs_to( Company::class );
     }
 
 

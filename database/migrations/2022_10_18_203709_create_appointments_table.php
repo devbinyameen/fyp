@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBranchesTable extends Migration
+class CreateAppointmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,16 @@ class CreateBranchesTable extends Migration
      */
     public function up()
     {
-        Schema::create('branches', function (Blueprint $table) {
+        Schema::create('appointments', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('company_id');
-            $table->string('name');
-            $table->string('phone');
-            $table->string('city');
-            $table->string('address');
-            $table->time('opens');
-            $table->time('closes');
+            $table->unsignedBigInteger('service_id');
+            $table->unsignedBigInteger('user_id');
+            $table->enum('status', ['requested','approved','declined','in-progress'])->default('requested');
+            $table->timestamp('from_time')->nullable();
+            $table->timestamp('to_time')->nullable();
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('NO ACTION');
         });
     }
 
@@ -36,6 +33,6 @@ class CreateBranchesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('branches');
+        Schema::dropIfExists('appointments');
     }
 }

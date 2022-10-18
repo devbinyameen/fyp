@@ -16,6 +16,7 @@ class CreateCompanyTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('category_id');
             $table->string('name')->unique();
             $table->string('email')->unique();
             $table->string('NTN')->nullable();
@@ -24,8 +25,6 @@ class CreateCompanyTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('NO ACTION');
 
         });
     }

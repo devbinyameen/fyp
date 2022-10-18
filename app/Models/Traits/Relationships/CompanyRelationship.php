@@ -3,7 +3,6 @@
 namespace App\Models\Traits\Relationships;
 
 use App\Domains\Auth\Models\User;
-use App\Models\Branch;
 
 trait CompanyRelationship
 {
@@ -13,9 +12,5 @@ trait CompanyRelationship
         return $this->belongsTo( User::class );
     }
 
-    public function branches()
-    {
-        return $this->hasMany( Branch::class );
-    }
 
 }

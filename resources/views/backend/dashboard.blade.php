@@ -23,9 +23,9 @@
                 <div class="media p-3">
                     <div class="media-body">
                         <span class="text-muted text-uppercase font-size-12 font-weight-bold">
-                            Branches
+                            Companies
                         </span>
-                        <h2 class="mb-0"> {{ $branches_count }} </h2>
+                        <h2 class="mb-0"> {{ $company_count }} </h2>
                     </div>
                     <div class="align-self-center">
                         <div id="today-revenue-chart" class="apex-charts"></div>
@@ -44,9 +44,9 @@
                 <div class="media p-3">
                     <div class="media-body">
                         <span class="text-muted text-uppercase font-size-12 font-weight-bold">
-                            Total Deliveries
+                            Total Appointments
                         </span>
-                        <h2 class="mb-0"> {{ $all_deliveries_count }} </h2>
+                        <h2 class="mb-0"> {{ $all_appointments_count }} </h2>
                     </div>
                     <div class="align-self-center">
                         <div id="today-product-sold-chart" class="apex-charts"></div>
@@ -64,9 +64,9 @@
                 <div class="media p-3">
                     <div class="media-body">
                         <span class="text-muted text-uppercase font-size-12 font-weight-bold">
-                            Pending Deliveries
+                            Pending Appointments
                         </span>
-                        <h2 class="mb-0"> {{ $pending_deliveries_count }} </h2>
+                        <h2 class="mb-0"> {{ $pending_appointments_count }} </h2>
                     </div>
                     <div class="align-self-center">
                         <div id="today-new-customer-chart" class="apex-charts"></div>
@@ -84,9 +84,9 @@
                 <div class="media p-3">
                     <div class="media-body">
                         <span class="text-muted text-uppercase font-size-12 font-weight-bold">
-                            Delivered Delieveries
+                            In Progress Delieveries
                         </span>
-                        <h2 class="mb-0"> {{ $delivered_deliveries_count }} </h2>
+                        <h2 class="mb-0"> {{ $in_progress_appointments_count }} </h2>
                     </div>
                     <div class="align-self-center">
                         <div id="today-new-visitors-chart" class="apex-charts"></div>

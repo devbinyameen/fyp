@@ -19,22 +19,21 @@
 
         <ul class="nav-second-level mm-collapse" aria-expanded="false" style="">
             <li>
-                <a href="{{ route('admin.services.index')  }}">
+                <a href="{{ route('admin.categories.index')  }}">
                     <!-- <i data-feather="profile"></i> -->
-                    <span> Service Types </span>
+                    <span> Categories </span>
                 </a>
             </li>
 
+            <li>
+                <a href="{{ route('admin.services.index')  }}">
+                    <!-- <i data-feather="profile"></i> -->
+                    <span> Services </span>
+                </a>
+            </li>
+
+
         </ul>
-    </li>
-
-    
-
-    <li>
-        <a href="{{ route('admin.branches.index')  }}">
-            <!-- <i data-feather="profile"></i> -->
-            <span> Branches </span>
-        </a>
     </li>
 
 

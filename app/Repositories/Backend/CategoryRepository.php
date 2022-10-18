@@ -4,20 +4,20 @@ namespace App\Repositories\Backend;
 
 use App\Exceptions\GeneralException;
 use Illuminate\Support\Facades\DB;
-use App\Models\Service;
+use App\Models\Category;
 use Auth;
 
 /**
  * Class UserRepository.
  */
-class ServiceRepository 
+class CategoryRepository 
 {
         /**
      * UserService constructor.
      *
      * @param  User  $service
      */
-    public function __construct(Service $service)
+    public function __construct(Category $service)
     {
         $this->model = $service;
     }
