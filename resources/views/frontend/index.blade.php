@@ -11,8 +11,8 @@
 
         <div class="container" style="z-index: 2">
             <div class="center">
-                <h2 class="text-white h2 font-weight-semibold mb-2">Welcome to the DNC.</h2>
-                <p class="text-white-50"> Deliver with your trust. </p>
+                <h2 class="text-white h2 font-weight-semibold mb-2">Welcome to the Appointment System.</h2>
+                <p class="text-white-50"> Appointment with your trust. </p>
             </div>
 
 {{--            <div class="row justify-content-end">--}}
@@ -73,7 +73,7 @@
 
 {{--                                    <div class="col-sm-6 input-group form-group">--}}
 {{--                                        <div class="input-group-prepend">--}}
-{{--                                            <span class="input-group-text bg-transparent"><img src="http://www.dncourier.com/public/front/movers/images/baggage.png" height="18" alt="baggage Icon"></span>--}}
+{{--                                            <span class="input-group-text bg-transparent"><img src="http://www.Appointment Systemourier.com/public/front/movers/images/baggage.png" height="18" alt="baggage Icon"></span>--}}
 {{--                                        </div>--}}
 {{--                                        <input type="text" name="home-moving-form-phone" id="home-moving-form-phone" class="form-control required" value="" placeholder="Weight">--}}
 {{--                                    </div>--}}
@@ -414,8 +414,8 @@
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-7 center">
                         <div class="heading-block">
-                            <h3 class="nott mb-3 font-weight-semibold ls0">How DNC Boost your Business.</h3>
-                            <span class="text-black-50">DNC will take your business at next level, Lets join us we will pick and deliver your shipment within same day.</span>
+                            <h3 class="nott mb-3 font-weight-semibold ls0">How Appointment System Boost your Business.</h3>
+                            <span class="text-black-50">Appointment System will take your business at next level, Lets join us we will help you book appointment and save your day.</span>
                         </div>
                     </div>
 
@@ -425,26 +425,17 @@
                                 <img src="{{ asset('front/movers/images/others/4.png') }}" alt="Image 1">
                             </div>
                             <div class="col-sm-6">
-                                <h3>We Commit Fastest Delivery Ever.</h3>
-                                <p class="mb-2">Now delivery is on time choice, just make a wish DNC will pick shipment and deliver on given time with passion.</p>
+                                <h3>We Commit Fastest Booking Ever.</h3>
+                                <p class="mb-2">Now booking is on time choice, just make a wish Appointment System help you to book that wish.</p>
                             </div>
                         </div>
                         <div class="row align-items-center mt-5">
-                            <div class="col-sm-6 mb-4 mb-sm-0">
-                                <h3>Pack and Deliver.</h3>
-                                <p class="mb-2">Now DNC will provide Logistic and overland service with low rates ever at door step.</p>
-                            </div>
                             <div class="col-sm-6">
-                                <img src="{{ asset('front/movers/images/others/2.png') }}" alt="Image 1">
+                                <h3>Easiest Business with Appointment System, we give best.</h3>
+                                <p class="mb-2">Appointment System give best booking solution by giving huge flexibility you can achieve when you ready.</p>
                             </div>
-                        </div>
-                        <div class="row align-items-center mt-5">
                             <div class="col-sm-6">
                                 <img src="{{ asset('front/movers/images/others/1.png') }}" alt="Image 1">
-                            </div>
-                            <div class="col-sm-6">
-                                <h3>Easiest Business with DNC, we give best.</h3>
-                                <p class="mb-2">DNC give best E-commerce solution by giving huge storage you can deliver when you ready.</p>
                             </div>
                         </div>
                     </div>
@@ -455,42 +446,6 @@
 
             <div class="clear"></div>
 
-            <div class="section p-0 dark mb-0" style="background: linear-gradient(to right, rgba(25,102,221,0.2), rgba(25,102,221,0.5)), url({{ asset('front/movers/images/section/1.jpg') }} ) no-repeat center center / cover; min-height: 400px">
-                <div class="container">
-                    <div class="row justify-content-between mb-4" style="padding: 100px 0 160px;">
-                        <div class="col-lg-5 col-md-6 offset-lg-1 pt-3">
-                            <h2 class="display-4 font-weight-bold text-white topmargin-lg">Services we can help you with.</h2>
-                        </div>
-                        <div class="col-lg-5 col-md-6 mb-0 mb-md-5">
-                            <p class="mb-5">We upgrade courier service in Pakistan by improving courier method and techniques to secure your product.</p>
-                            <h3 class="mb-2 text-white">Service We Provide:</h3>
-                            <div class="d-flex">
-                                <ul class="col-6 iconlist">
-                                    <li class="my-2"><i  class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">100% Trustable</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">100% Safe &amp; Secure</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">On-Time Delivery</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Verified Movers</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Liecenced Company</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">No Hidden Charges</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Sasta Cargo</span></li>
-                                </ul>
-                                <ul class="col-6 iconlist">
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">24x7  Support</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">No Extra Payments</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Also Deliver on Sunday</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Free movings on refferal </span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Track Items by App</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">International Delivery</span></li>
-                                    <li class="my-2"><i class="icon-line-circle-check font-weight-light"></i> <span class="pl-2">Door to Door</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <svg class="svg-curve" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1463 188.03">
-                    <path style="fill:#FFF;" d="M-.5,288.5s297-175,792-97,599,52,671,25v143H-.5Z" transform="translate(0 -171.47)"/></svg>
-            </div>
 
             <div class="section section-features bg-transparent mt-0 p-0 clearfix">
                 <div class="container clearfix">
@@ -528,8 +483,8 @@
                                     <i class="icon-truck1"></i>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3 class="font-weight-semibold">COD (cash on delivery).</h3>
-                                    <p class="text-muted">We offer Cash on Delivery option in which you will pay charges on delivery plus we will remove your burden by neglecting security fee.</p>
+                                    <h3 class="font-weight-semibold">COD (cash on booking).</h3>
+                                    <p class="text-muted">We offer Cash on Delivery option in which you will pay charges on booking plus we will remove your burden by neglecting security fee.</p>
                                 </div>
                             </div>
                         </div>

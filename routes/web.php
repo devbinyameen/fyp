@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\HomeController;
 
 /*
  * Global Routes
@@ -42,3 +43,4 @@ Route::view('blog_II','frontend.pages.blog_II');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/booking',[ HomeController::class, 'booking' ]);

@@ -46,6 +46,7 @@
                                         <img src="{{ asset($root.'images/logo.png')  }}"  alt="logo"></a>
                                 </div><!-- #logo end -->
 								<li class="current menu-item"><a class="menu-link" href="{{ url('/') }}"><div>Home</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="{{ url('booking') }}"><div>Book an Appointment</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="{{ url('about_us') }}"><div>Our Company</div></a></li>
 {{--								<li class="menu-item"><a class="menu-link" href="#"><div>Rates</div></a>--}}
 {{--									<ul class="sub-menu-container">--}}
