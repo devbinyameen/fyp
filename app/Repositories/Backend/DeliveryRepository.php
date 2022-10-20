@@ -22,7 +22,7 @@ class DeliveryRepository
 
     public function addDelivery( array $data = [] ) : Appointment
     {
-
+        dd( $data );
     }
 
     public function updateDelivery( array $data = [], $id ) : bool
@@ -65,6 +65,12 @@ class DeliveryRepository
         {
             return route('client.deliveries.index')->with('warning', 'This delivery cannot be deleted.');
         }
+    }
+
+    public function getBusinessAppoinyments( $company_id )
+    {
+        $appointments = Appointment::orderBy('from_time','desc')->whereCompanyId( $company_id )->get();
+        return $appointments;
     }
 
   

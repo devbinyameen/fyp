@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-				{{ date('Y') }}  &copy; DNC. All Rights Reserved.
+				{{ date('Y') }}  &copy; GROOTLANE. All Rights Reserved.
             </div>
         </div>
     </div>

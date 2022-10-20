@@ -31,6 +31,9 @@
         "vue-template-compiler": "^2.5.*"
     },
     "dependencies": {
+        "@fullcalendar/core": "^5.11.3",
+        "@fullcalendar/vue": "^5.11.2",
+        "fullcalendar": "^5.11.3",
         "vue-unique-id": "^3.2.1",
         "vue-uuid": "^2.0.2",
         "vuelidate": "^0.7.6"

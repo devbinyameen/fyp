@@ -24,7 +24,7 @@ Vue.use(Vuelidate)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('vue-loader', require('./components/vue-loader.component.vue').default);
-Vue.component('service-and-scopes', require('./components/service-scope/service-and-scopes.component.vue').default);
+Vue.component('booking', require('./components/service-scope/booking.vue').default);
 Vue.component('add-delivery', require('./components/delivery/add-delivery.component.vue').default);
 Vue.component('edit-delivery', require('./components/delivery/edit-delivery.component.vue').default);
 

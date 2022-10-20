@@ -24,7 +24,7 @@ Route::group(['as' => 'frontend.'], function () {
  *
  * These routes can only be accessed by users with type `admin`
  */
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'has_role:Administrator|Super Administrator']], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['']], function () {
     includeRouteFiles(__DIR__.'/backend/');
 });
 
@@ -42,5 +42,7 @@ Route::view('blog_II','frontend.pages.blog_II');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [ HomeController::class, 'index' ])->name('home');
 Route::get('/booking',[ HomeController::class, 'booking' ]);
+Route::get('/calendar/{company_id}',[ HomeController::class, 'calendar' ])->middleware('auth');
+Route::post('/calendar',[ HomeController::class, 'postCalendar' ])->name('calendar.post')->middleware('auth');

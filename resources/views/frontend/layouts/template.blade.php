@@ -31,7 +31,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>DNC</title>
+	<title>GROOTLANE</title>
 
     <style>
         footer
@@ -76,6 +76,7 @@
 	<script src="{{ asset('front/js/plugins.ajaxform.js' )}}"></script>
 	<script src="{{ asset('front/js/plugins.easing.js' )}}"></script>
 	<script src="{{ asset('front/js/plugins.lightbox.js' )}}"></script>
+	<script src="{{ asset('admin/assets/libs/moment/moment.min.js' )}}"></script>
 
 	<!-- bootstrap min -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha256-u+Q/eQIe6P5wU4K8maihJOQkhqBbf7K1NN68GwTpNz0=" crossorigin="anonymous"></script>

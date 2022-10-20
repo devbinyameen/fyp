@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Company;
-use App\Models\Branch;
 use App\Models\Appointment;
 
 /**
@@ -12,6 +11,12 @@ use App\Models\Appointment;
  */
 class DashboardController extends Controller
 {
+    public function __construct(  )
+    {
+
+    } 
+
+
     /**
      * @return \Illuminate\View\View
      */

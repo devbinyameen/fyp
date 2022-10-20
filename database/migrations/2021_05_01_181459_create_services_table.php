@@ -15,6 +15,8 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('company_id');
             $table->string('service_title');
             $table->double('charges',8,2)->nullable();
             $table->enum('status', ['active','in-active'])->default('active');

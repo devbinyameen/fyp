@@ -42,8 +42,9 @@
 
 							<ul class="menu-container">
                                 <div id="logo" class="ml-auto ml-md-0">
-                                    <a href="{{ url('/') }}" class="standard-logo">
-                                        <img src="{{ asset($root.'images/logo.png')  }}"  alt="logo"></a>
+                                    <a href="{{ url('/') }}" class="standard-logo" style="color:#046af9;">
+									GROOTLANE
+									</a>
                                 </div><!-- #logo end -->
 								<li class="current menu-item"><a class="menu-link" href="{{ url('/') }}"><div>Home</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="{{ url('booking') }}"><div>Book an Appointment</div></a></li>
@@ -60,7 +61,7 @@
 {{--								</li>--}}
 {{--								<li class="menu-item"><a class="menu-link" href="#"><div>Team</div></a></li>--}}
 								<li class="menu-item"><a class="menu-link" href="{{ url('faqs') }}"><div>FAQs</div></a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{ url('contact_us') }}"><div>Contact Us</div></a></li>
+                                <!-- <li class="menu-item"><a class="menu-link" href="{{ url('contact_us') }}"><div>Contact Us</div></a></li> -->
 {{--								<li class="menu-item"><a class="menu-link" href="{{ url('login') }}"><div> Login </div></a></li>--}}
 							</ul>
 

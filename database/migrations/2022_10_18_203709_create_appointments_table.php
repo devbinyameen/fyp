@@ -21,6 +21,7 @@ class CreateAppointmentsTable extends Migration
             $table->enum('status', ['requested','approved','declined','in-progress', 'completed'])->default('requested');
             $table->timestamp('from_time')->nullable();
             $table->timestamp('to_time')->nullable();
+            $table->timestamp('phone_number')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

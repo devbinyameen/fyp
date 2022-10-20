@@ -17,8 +17,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="ml-auto ml-md-0">
-						<a href="{{ url('/') }}" class="standard-logo">
-                            <img src="{{ asset('images/home_page_logo.png')  }}"  alt="logo"></a>
+						<a href="{{ url('/') }}" class="standard-logo" style="color:#fff;">
+							GROOTLANE
                         <a href="{{ url('/') }}" class="retina-logo" data-dark-logo="{{ asset('images/logo2.png')  }}">
                     </div><!-- #logo end -->
 
@@ -27,14 +27,14 @@
 							<i class="i-plain icon-call m-0"></i>
 							<div class="he-text font-weight-normal text-white-50">
 								Call Us:
-								<span><a href="tel:+111 22-33-44" class="text-white font-weight-medium">+9302 33373253</a></span>
+								<span><a href="tel:+111 22-33-44" class="text-white font-weight-medium">0900 78601</a></span>
 							</div>
 						</li>
 						<li>
 							<i class="i-plain icon-line2-envelope m-0"></i>
 							<div class="he-text font-weight-normal text-white-50">
 								Email Us:
-								<span><a href="mailto:info@canvas.com" target="_top" class="text-white font-weight-medium">info@dncourier.com</a></span>
+								<span><a href="mailto:info@canvas.com" target="_top" class="text-white font-weight-medium">info@grootlane.com</a></span>
 							</div>
 						</li>
 					</ul>
@@ -79,6 +79,7 @@
 							<ul class="menu-container">
 								<li class="current menu-item"><a class="menu-link" href="{{ url('/') }}"><div>Home</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="{{ url('about_us') }}"><div>Our Company</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="{{ url('booking') }}"><div>Book an Appointment</div></a></li>
 
 {{--                                <li class="menu-item"><a class="menu-link" href="#"><div>Rates</div></a>--}}
 {{--									<ul class="sub-menu-container">--}}
@@ -93,7 +94,7 @@
 
                                 <!-- <li class="menu-item"><a class="menu-link" href="#"><div>Team</div></a></li> -->
 								<li class="menu-item"><a class="menu-link" href="{{ url('faqs') }}"><div>FAQs</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="{{ url('contact_us') }}"><div>Contact Us</div></a></li>
+								<!-- <li class="menu-item"><a class="menu-link" href="{{ url('contact_us') }}"><div>Contact Us</div></a></li> -->
 							</ul>
 
 						</nav><!-- #primary-menu end -->

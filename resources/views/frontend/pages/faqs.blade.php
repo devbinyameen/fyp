@@ -82,7 +82,7 @@
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-39">If an International Shipment is dutiable, how does it affect delivery times?</a></strong></li>
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-40">What happens in case a shipper wants to return an undelivered International Shipment to the Origin?</a></strong></li>
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-41">Who pays duty on goods?</a></strong></li>
-                                    <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-42">Does DNC consider all shipment as a liability?</a></strong></li>
+                                    <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-42">Does GROOTLANE consider all shipment as a liability?</a></strong></li>
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-43">From which countries can I import a shipment to my own country?</a></strong></li>
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-44">Does DN Courier Service Pvt Ltd deliver to PO boxes?</a></strong></li>
                                     <li><i class="icon-caret-right"></i><strong><a href="#" data-scrollto="#faq-45">Why do I need to provide the weight and dimensions of my parcel?</a></strong></li>
@@ -93,7 +93,7 @@
 
                                 <h3 id="faq-1"><strong>Q.</strong> What is the procedure for Pickup?</h3>
                                 <p>
-                                    DNC pickup service is available Monday to Saturday as a regular DNC service.DNC Courier Services schedules your pick-up according to your home or office address. You can request for pickup by simply calling us at, 03023373253.
+                                    GROOTLANE pickup service is available Monday to Saturday as a regular GROOTLANE service.GROOTLANE Courier Services schedules your pick-up according to your home or office address. You can request for pickup by simply calling us at, 03023373253.
                                 </p>
 
                                 <div class="divider divider-right"><a href="#" data-scrollto="#faqs-list"><i class="icon-chevron-up"></i></a></div>
@@ -122,7 +122,7 @@
 
                                 <h3 id="faq-5"><strong>Q. How to acquire shipper’s address when it is a COD shipment?</strong> </h3>
                                 <p>
-                                    To find out more details about the shipper please email us at dncourierofficial@.com and mention your name, city, address and tracking number. Please remember that DNC is not responsible for the quality of delivered material as we are only responsible for delivery of the products. We do not own or sell any items unless otherwise mentioned. Further, DN Courier is not liable for the time duration it may take the shipper to contact the shipment recipient, so complaints related to delays in returns or exchanges will not be entertained by DN Courier once the shippers info. Has been provided.
+                                    To find out more details about the shipper please email us at dncourierofficial@.com and mention your name, city, address and tracking number. Please remember that GROOTLANE is not responsible for the quality of delivered material as we are only responsible for delivery of the products. We do not own or sell any items unless otherwise mentioned. Further, DN Courier is not liable for the time duration it may take the shipper to contact the shipment recipient, so complaints related to delays in returns or exchanges will not be entertained by DN Courier once the shippers info. Has been provided.
                                 </p>
 
                                 <div class="divider divider-right"><a href="#" data-scrollto="#faqs-list"><i class="icon-chevron-up"></i></a></div>
@@ -222,7 +222,7 @@
 
                                 <h3 id="faq-17"><strong>Q. What is your policy when anything goes wrong during delivery?</strong> </h3>
                                 <p>
-                                    Having over years of experience in the courier industry, DNC have learnt to deal with most things which could go wrong and so have standby solutions. It is our policy to make prompt alternative arrangements for any type of delays i.e. flight off-load, technical issues, due to accidents, breakdowns etc.
+                                    Having over years of experience in the courier industry, GROOTLANE have learnt to deal with most things which could go wrong and so have standby solutions. It is our policy to make prompt alternative arrangements for any type of delays i.e. flight off-load, technical issues, due to accidents, breakdowns etc.
                                 </p>
 
                                 <div class="divider divider-right"><a href="#" data-scrollto="#faqs-list"><i class="icon-chevron-up"></i></a></div>
@@ -287,7 +287,7 @@
 
                                 <h3 id="faq-26"><strong>Q. Will I get a refund if my shipment is not on time?</strong> </h3>
                                 <p>
-                                    As per company policy, DNC will not be held liable for damages and loss due to late delivery and/or interruption of service due to a cause beyond organizational control.
+                                    As per company policy, GROOTLANE will not be held liable for damages and loss due to late delivery and/or interruption of service due to a cause beyond organizational control.
                                 </p>
 
                                 <div class="divider divider-right"><a href="#" data-scrollto="#faqs-list"><i class="icon-chevron-up"></i></a></div>
@@ -397,7 +397,7 @@
 
                                 <div class="divider divider-right"><a href="#" data-scrollto="#faqs-list"><i class="icon-chevron-up"></i></a></div>
 
-                                <h3 id="faq-42"><strong>Q. Does DNC consider all shipment as a liability?</strong> </h3>
+                                <h3 id="faq-42"><strong>Q. Does GROOTLANE consider all shipment as a liability?</strong> </h3>
                                 <p>
                                     Every International Shipment is transported on a limited liability basis as provided on the airway bill.  (DN Courier Service Pvt Ltd liability is strictly limited to direct loss. DN Courier Service Pvt Ltd maximum liability in the event of loss or damage to a shipment is US$100 or the value on the airway bill whichever is lesser).
                                 </p>

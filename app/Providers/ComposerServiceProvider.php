@@ -30,10 +30,6 @@ class ComposerServiceProvider extends ServiceProvider
             $view->with('announcements', $announcementService->getForBackend());
         });
 
-        view()->composer(
-            ['backend.deliveries.*', 'client.deliveries.*'],
-            'App\Http\ViewComposers\ServiceAreasComposer'
-        );
 
     }
 }

@@ -157,4 +157,11 @@ class AppointmentController extends Controller
         return view( $this->directory.'pending');
     }
 
+
+    public function getBusinessAppoinyments($company_id)
+    {
+        $appointments = $this->service->getBusinessAppoinyments( $company_id );
+        return response()->json( $appointments, 200 );
+    }
+
 }

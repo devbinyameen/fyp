@@ -5,8 +5,6 @@ namespace App\Services\Backend;
 use Illuminate\Support\Facades\DB;
 use App\Exceptions\GeneralException;
 use App\Repositories\Backend\DeliveryRepository;
-use App\Models\ServiceArea;
-use App\Models\Branch;
 use App\Models\Service;
 
 /**
@@ -239,6 +237,10 @@ class DeliveryService
             }
         }
 
+    }
+    public function getBusinessAppoinyments( $company_id )
+    {
+        return $this->repository->getBusinessAppoinyments( $company_id );
     }
     
 

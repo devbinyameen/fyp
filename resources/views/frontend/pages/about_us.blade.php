@@ -13,7 +13,7 @@
 
 			<div class="container clearfix">
 				<h1>About Us</h1>
-				<span>Everything you need to know about DNC</span>
+				<span>Everything you need to know about GROOTLANE</span>
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Home</a></li>
 					<li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
@@ -33,28 +33,33 @@
 							<div class="col-lg-6 mb-5">
 								<h3>Objective</h3>
                                 <p>
-                                    DNC's main objective to start new era in <b> Courier & Logestics </b> in Pakistan by using new techniques and modern equipment.Our team not only safe your business but also grow up your business by giving lots of service and reduce your time to get grow your business by giving fastest courier response.We belived in deliver with your trust.
-                                </p>
+									The GROOTLANE (GL) was created with the goal of creating a Free and Open Source
+									Software (FOSS). This project is primarily being created for our client, but it will be expandable
+									and customizable enough to be deployed and integrated into any network.
+								</p>
 							</div>
 
 							<div class="col-lg-6 mb-5">
 								<h3>Our Mission</h3>
                                 <p>
-                                    DNC is always looking forward to provide better and fastest service to our client and expand there business. Our team works 24/7 and we make sure that we fulfil your commitment to your love ones or clients weather sunny or rainy.Our team introduce new era of E-commerce solution called <b>EASY SHOP</b> to our users.DNC provide best service with lots of beneficial opportunities to our users which will take your business to next level.We move domestic shipments in lowest rates with fastest service.
-                                </p>
+									The goal of this project is to develop an appointment-based system that will assist individuals in
+									running their businesses more effectively while also providing assistance to clients. Business owners may
+									use the system to manage their booking slots from anywhere in the world. Customers can reserve unfilled
+									spaces in their name by booking them online.
+								</p>
 							</div>
 
                             <div class="col-lg-6">
                                 <h3>Why Choose us ?</h3>
                                 <p>
-                                    DNC always there for your help while you move domestic or international.DNC will give you best and fastest services on cheapest rates both on every single service.We always look forward benefits to our users. We make your sure your bushiness is expanding by giving you global access in your hands with out any delay or excuses.We make your <b>EASY SHOP</b> bushiness just one click away.
+                                    GROOTLANE always there for your help while you move domestic or international.GROOTLANE will give you best and fastest services on cheapest rates both on every single service.We always look forward benefits to our users. We make your sure your bushiness is expanding by giving you global access in your hands with out any delay or excuses.We make your <b>EASY SHOP</b> bushiness just one click away.
                                 </p>
                             </div>
 
                             <div class="col-lg-6">
                                 <h3>What we do?</h3>
                                 <p>
-                                    DNC work 24/7 to move your shipment to their destinations.We fulfill our commitment weather it’s sunny or rainy.DNC use modern techniques and modern safety protocols to ensure safety level of <shipments class=""></shipments>
+                                    GROOTLANE work 24/7 to move your shipment to their destinations.We fulfill our commitment weather it’s sunny or rainy.GROOTLANE use modern techniques and modern safety protocols to ensure safety level of <shipments class=""></shipments>
                                 </p>
                             </div>
 
